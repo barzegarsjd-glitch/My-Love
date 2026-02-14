@@ -11,11 +11,9 @@
       #heading{
         font-family: "Libre Baskerville";
         font-variant-caps: petite-caps;
-        font-size: 3rem;
       }
       #paragraph{
         font-family:caveat;
-        font-size: 2rem;
         text-justify:inter-word;
         padding:0%;
         }
