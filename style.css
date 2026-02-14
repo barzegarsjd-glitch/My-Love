@@ -1,0 +1,24 @@
+ 
+          html{
+        background-color: #A82323;
+      }
+      img{
+        border: 5px solid #FEFFD3 ; width:100%;
+      }
+      .text{
+        color: #BCD9A2 ; text-align: center;
+      }
+      #heading{
+        font-family: "Libre Baskerville";
+        font-variant-caps: petite-caps;
+        font-size: 3rem;
+      }
+      #paragraph{
+        font-family:caveat;
+        font-size: 2rem;
+        text-justify:inter-word;
+        padding:0%;
+        }
+      div{
+        width:50%; margin-left:25%;
+      }
