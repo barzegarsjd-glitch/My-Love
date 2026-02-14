@@ -1,22 +1,49 @@
- 
-          html{
-        background-color: #A82323;
-      }
-      img{
-        border: 5px solid #FEFFD3 ; width:100%;
-      }
-      .text{
-        color: #BCD9A2 ; text-align: center;
-      }
-      #heading{
-        font-family: "Libre Baskerville";
-        font-variant-caps: petite-caps;
-      }
-      #paragraph{
-        font-family:caveat;
-        text-justify:inter-word;
-        padding:0%;
-        }
-      div{
-        width:50%; margin-left:25%;
-      }
+/* Mobile-first (works well on phones by default) */
+html{
+  background-color: #A82323;
+}
+
+/* Make sizing more predictable */
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+img{
+  border: 5px solid #FEFFD3;
+  width: 100%;
+  height: auto;          /* keeps image proportions */
+  display: block;        /* removes inline gap */
+}
+
+.text{
+  color: #BCD9A2;
+  text-align: center;
+}
+
+#heading{
+  font-family: "Libre Baskerville", serif;
+  font-variant-caps: petite-caps;
+}
+
+#paragraph{
+  font-family: "Caveat", cursive;
+  text-align: justify;   /* more reliable than text-justify */
+  padding: 0;
+  margin: 0;
+}
+
+/* Container: full width on mobile, centered with max width */
+div{
+  width: min(900px, 100%);   /* never overflow small screens */
+  margin: 0 auto;            /* centers on larger screens */
+  padding: 16px;             /* space from screen edges */
+}
+
+/* Optional: make it a bit roomier on larger screens */
+@media (min-width: 768px){
+  div{
+    padding: 24px;
+  }
+}
